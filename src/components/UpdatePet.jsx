@@ -16,7 +16,7 @@ const UpdatePet = () => {
   useEffect(() => {
     const fetchPetDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/pets/${petId}`);
+        const response = await fetch(`https://pets-reunite-tgl8.onrender.com/api/pets/${petId}`);
         if (response.ok) {
           const data = await response.json();
           setFormData({
@@ -38,7 +38,7 @@ const UpdatePet = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://localhost:5000/api/pets/${petId}`, {
+      const response = await fetch(`https://pets-reunite-tgl8.onrender.com/api/pets/${petId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

@@ -42,7 +42,7 @@ const LostPetForm = () => {
         userName,
       };
 
-      const res = await fetch("/api/pets", {
+      const res = await fetch("https://pets-reunite-tgl8.onrender.com/api/pets", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formDataWithTimestamp),

@@ -17,7 +17,7 @@ const UserEntries = ({ userId }) => {
   useEffect(() => {
     const fetchUserEntries = async () => {
       try {
-        const response = await fetch("/api/pets/maps");
+        const response = await fetch("https://pets-reunite-tgl8.onrender.com/api/pets/maps");
         const allEntries = await response.json();
   
         const entries = allEntries.filter((entry) => entry.userId === userId);

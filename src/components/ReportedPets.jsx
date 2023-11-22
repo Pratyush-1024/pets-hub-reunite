@@ -15,7 +15,7 @@ const ReportedPets = ({ filterData }) => {
   const fetchPets = async () => {
     try {
 
-       let apiUrl = '/api/pets';
+       let apiUrl = 'https://pets-reunite-tgl8.onrender.com/api/pets';
 
     if (filterData.petStatus || filterData.type || filterData.sex) {
       apiUrl += `?petStatus=${filterData.petStatus}&type=${filterData.type}&sex=${filterData.sex}`;
@@ -52,7 +52,7 @@ const ReportedPets = ({ filterData }) => {
 
   const handleDelete = async (deletedPetId) => {
     try {
-      await fetch(`/api/pets/${deletedPetId}`, {
+      await fetch(`https://pets-reunite-tgl8.onrender.com/api/pets/${deletedPetId}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

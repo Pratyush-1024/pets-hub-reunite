@@ -5,8 +5,6 @@ import BlueMarker from "../assets/marker-blue.png";
 import "./MyMap.css";
 import { auth } from '../FirebaseConfig';
 
-// Custom Popup component
-// Custom Popup component
 const CustomPopup = ({ pet }) => {
   const currentUserID = auth.currentUser ? auth.currentUser.uid : null;
 
@@ -110,7 +108,7 @@ const MyMap = (props) => {
   useEffect(() => {
     const getPins = async () => {
       try {
-        const response = await fetch("/api/pets/maps");
+        const response = await fetch("https://pets-reunite-tgl8.onrender.com/api/pets/maps");
         const pins = await response.json();
         setPins(pins);
       } catch (err) {
