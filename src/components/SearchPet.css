@@ -37,3 +37,8 @@ body{
   background-color: #207893;
 }
 
+@media screen and (max-width: 893px) and (min-width: 770px) {
+  .search-filter__radio-label {
+    display: block;
+  }
+}

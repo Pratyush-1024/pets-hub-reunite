@@ -11,8 +11,9 @@
 }
 
 .search-filter__header {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
+  text-align: center;
   margin-bottom: 20px;
   padding: 10px; /* Padding for the heading */
   background-color: #eed9d1; /* Background color for the heading */
@@ -30,7 +31,9 @@
 }
 
 .search-filter__label {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px; /* Adjusted margin for better spacing */
 }
 
 .search-filter__radio-input {
