@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -72,4 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 =======
 # pets-hub-reunite
 https://pets-reunite.vercel.app/
->>>>>>> a893362901219a546af1fa114be552cf535b89fa
+
